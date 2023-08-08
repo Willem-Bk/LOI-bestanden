@@ -1,7 +1,35 @@
 "use strict";
+const selectors = {
+    boardContainer: document.querySelector('.board-container'),
+    board: document.querySelector('.board'),
+    moves: document.querySelector('.moves'),
+    timer: document.querySelector('.timer'),
+    start: document.querySelector('button'),
+    win: document.querySelector('.win'),
+    myField: document.getElementById("field");
+}       
 
-// maak een const myField en koppel deze aan de div met id="field"
-// Geef myField een event listener die de functie onClickCard aanroept als er op geklikt wordt
+const state = {
+    gameStarted: false,
+    flippedCards: 0,
+    totalFlips: 0,
+    totalTime: 0,
+    loop: null
+}
+ //maak een const myField en koppel deze aan de div met id="field"
+ //Geef myField een event listener die de functie onClickCard aanroept als er op geklikt wordt
+
+ const generateGame = ()=>{
+    const dimensions = selectors.board.getAttribute('data-dimension')
+if (dimensions % 2 !== 0){
+    throw new Error("The dimensions of the board must be an even number")
+} 
+}
+
+ // voeg hieronder code voor de eventlistener toe
+ 
+    
+
 
 // de volgende regel krijg je vast cadeau:
 const myCardSet = ["duck", "kitten", "piglet", "puppy", "calf", "veal", "lamb", "rooster", "horse", "mouse", "dog", "cat", "goose", "goat", "sheep", "pig", "cow", "chick", "hen"];
