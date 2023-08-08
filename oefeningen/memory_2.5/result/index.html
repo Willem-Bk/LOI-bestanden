@@ -1,20 +1,52 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧠 Memory Game in JavaScript</title>
+    <script src="js/memory.js" defer></script>
+    <link href="css/game.css" rel="stylesheet" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<title>Cardgame</title>
-	<link href="css/game.css" rel="stylesheet">
-</head>
+  <body>
+    <div id="field"></div>
+	<main>
+      <h1>Memory Game</h1>
+      <!--<form id="game-form" data-dimension="4">
+         <div class="select-size">
+          <label for="field-size">Aantal velden:</label>
+          <select id="field-size" name="field-size" required>
+            <option value="4" selected>4 x 4</option>
+            <option value="5">5 x 5</option>
+            <option value="6">6 x 6</option>
+          </select>
+        </div>-->
 
-<body>
+        <button type="submit">Start spel</button
+        ><!--controls-->
+      </form>
+      <div class="scoreboard">
+        <!--stats-->
+        <div>
+          <span>Pogingen:</span><!--moves-->
+          <span class="total-attempts">0</span>
+        </div>
+        <div>
+          <span>Gelijken:</span>
+          <span class="successful-attempts">0</span>
+        </div>
+        <div>
+          <span>Verstreken tijd:</span><!--timer-->
+          <span class="play-time">0:00</span>
+        </div>
+        <div>
+          <span>Snelste tijd:</span>
+          <span class="highscore"></span>
+        </div>
+      </div>
+      <div id="field"></div>
+    </main>
 
-<div id="field"></div>
-		
-	<script src="js/memory.js" type="module"></script>
-	<script>
-
-	</script>
-</body>
-
+  </body>
 </html>
